@@ -1,37 +1,3 @@
-/****************************************************** */
-/********************* AINJIBI *********************** */
-/******************************************************
-
-    TABLE OF CONTENT
-    ========================
-
-    01. Default CSS
-    02. HEADER PART CSS
-    03. HERO BANNER PART CSS
-	04. PAGE TITLE PART CSS
-	05. PRACTICE AREA PART CSS
-	06. EXPERIENCE PART CSS
-	07. CHOOSE US PART CSS
-	08. COUNTER UP PART CSS
-	09. ATTORNEYS PART CSS
-	10. TESTIMONIAL PART CSS
-	11. BLOG PART CSS 
-	12. ABOUT PART 
-	13. PRATICE DETAILS PART CSS
-	14. HAPPY CLIENT PART CSS
-	15. BOOK APPOINMENT PART CSS
-    16. BLOG POST PART CSS
-    17. BLOG DETAILS PART CSS
-    18. GALLERY PART CSS 
-    19. QUESTIONS PART CSS
-    20. ERROR PART CSS
-    21. TRUST PART CSS
-    22. CONTACT PART CSS
-    23. FOOTER TOP PART CSS
-    24. FOOTER BOTTOM PART CSS
-
-
-
 
 /* ================================================================= */
 /* ======================= DEFAULT CSS ===================== */
@@ -273,45 +239,28 @@ img {
 /* ================= HERO BANNER PART CSS =================*/
 /* ================================================================= */
 .banner-slider {
-    background: url(../images/hero-banner-img.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%; /* Asegúrate de que el slider ocupe todo el ancho disponible */
 }
 
 .hero-banner-part {
-    padding: 220px 0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 300px 0px; /* Ajusta este valor según sea necesario para tu diseño */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-content h1 {
     color: #fff;
     font-size: 56px;
     font-family: 'Playfair Display', serif;
-    padding: 0px 175px;
-    margin-bottom: 50px;
     font-weight: 700;
-    transform: translateY(-50px);
-    transition: 1.5s;
-    opacity: 0;
-}
-
-.slick-active .hero-content h1 {
-    transform: translate(0);
-    opacity: 1;
+    /* Las transformaciones y transiciones se han eliminado */
 }
 
 .hero-content .theme-btn {
-    transform: translateY(-50px);
-    transition: transform 1.5s, box-shadow 0.5s, opacity 1.5s;
-    opacity: 0;
-}
-
-.slick-active .hero-content .theme-btn {
-    transform: translate(0);
-    opacity: 1;
-}
-
-a.theme-btn {
     color: #fff;
     font-size: 18px;
     font-weight: 500;
@@ -320,50 +269,66 @@ a.theme-btn {
     border-radius: 30px;
     background: #d49943;
     transition: all .3s;
-
 }
 
 .theme-btn:hover {
     box-shadow: inset 0 0 0 5px rgba(255, 255, 255, .4);
 }
 
-.banner-slider .fa-caret-left {
+/* Estilos para los botones de navegación del slider */
+.slick-prev,
+.slick-next {
+    font-size: 0; /* Elimina el texto si se usará ícono */
+    line-height: 0; /* Elimina altura extra del texto */
     position: absolute;
+    top: 50%; /* Centra verticalmente */
+    transform: translate(0, -50%);
     width: 40px;
     height: 40px;
-    line-height: 40px;
-    left: 20%;
-    top: 42%;
-    text-align: center;
-    color: #ffffff;
-    background: #222222;
-    border-radius: 100%;
-    padding-right: 5px;
+    padding: 0;
+    background-color: #222222; /* Color de fondo para los botones */
+    color: white; /* Color del texto o ícono */
+    border: none;
+    border-radius: 50%; /* Botones redondos y completos */
     cursor: pointer;
     z-index: 999;
-    transition: all .3s;
 }
 
-.banner-slider .fa-caret-right {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    right: 20%;
-    top: 42%;
-    text-align: center;
-    color: #ffffff;
-    background: #222222;
-    border-radius: 100%;
-    padding-left: 5px;
-    cursor: pointer;
-    z-index: 999;
-    transition: all .3s;
+.slick-prev,
+.slick-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.banner-slider .fa-caret-left:hover,
-.banner-slider .fa-caret-right:hover {
-    background: #d49943;
+.slick-prev {
+    left: 10px; /* Ajusta la posición horizontal izquierda */
+}
+
+.slick-next {
+    right: 10px; /* Ajusta la posición horizontal derecha */
+}
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'FontAwesome'; /* Asegúrate de que FontAwesome esté cargado */
+    /* Corrige los códigos de los íconos según FontAwesome */
+    font-size: 20px; /* Tamaño del ícono */
+    display: block;
+}
+
+.slick-prev:before {
+    content: '\f053'; /* Código del ícono de FontAwesome para "anterior" */
+}
+
+.slick-next:before {
+    content: '\f054'; /* Código del ícono de FontAwesome para "siguiente" */
+}
+
+
+/* Estilos para el hover */
+.slick-prev:hover,
+.slick-next:hover {
+    background-color: #d49943; /* Cambia el color de fondo al hacer hover */
 }
 
 /* ================================================================= */
@@ -539,7 +504,7 @@ span {
 .choose-us-part {
     padding-top: 105px;
     padding-bottom: 60px;
-    background-image: url(../images/layer-img.png);
+    background-image: url(../images/IMAGENES.png);
     background-repeat: no-repeat;
     background-size: inherit;
     background-attachment: inherit;
@@ -1863,8 +1828,8 @@ span {
 /* ================ FOOTER TOP PART CSS ================ */
 /* ================================================================= */
 .footer-top {
-    padding-top: 110px;
-    padding-bottom: 60px;
+    padding-top: 70px;
+    padding-bottom: 12px;
     background: #163e6f;
     border-bottom: 2px solid #3c3b3b;
     ;
@@ -1873,27 +1838,35 @@ span {
 .footer-logo {
     margin-bottom: 30px;
 }
+.footer-logo img {
+    width: 280px; /* Set the width as desired */
+    height: 150px; /* Set the height as desired */
+    object-fit: contain; /* This ensures the aspect ratio is maintained without stretching the image */
+}
+
 
 .footer-column {
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .footer-column p {
     color: #bebebe;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.6;
     font-weight: 300;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .personal-info i {
     color: #fff;
     transition: all .3s;
+    margin-right: 10px;
 }
 
 .personal-info span {
     color: #bebebe;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     margin-left: 10px;
     transition: all .3s;
@@ -1903,12 +1876,15 @@ span {
     color: #d49943
 }
 
+.footer-column {
+    padding: 10px 0;
+}
 .footer-column h3 {
     font-size: 26px;
     color: #fff;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: 28px;
 }
 
 .news-blog {
@@ -1950,15 +1926,78 @@ span {
 .footer-bottom {
     background: #163e6f;
     padding: 20px 0px;
+    text-align: center; /* This ensures the text is centered */
 }
 
 .copy-right-text p {
-    font-size: 16px;
-    color: #848484;
+    font-size: 14px;
+    color: #fffefe;
     font-weight: 300;
-
+    margin-bottom: 0; /* Remove the margin if there is any */
 }
 
 .copy-right-text p i {
     color: #c89141;
 }
+
+
+/* Inserta aquí tu CSS DEFAULT proporcionado */
+
+/* Aquí comienzan los estilos específicos para la sección de Escrituras Públicas */
+.main-header {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #e9ecef;
+    width: 250px;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+    background-color: #dde;
+}
+
+.requirements {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.requirements h2 {
+    margin-top: 0;
+}
+
+.requirements ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.requirements ul li {
+    padding: 5px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Inserta aquí el resto de tu CSS DEFAULT proporcionado */

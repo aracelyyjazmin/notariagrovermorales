@@ -17,13 +17,13 @@
     
     
         // For Banner Slider Js
-        $(".banner-slider").slick({
-            autoplay: false,
-            autoplaySpreed: 2000,
-            arrows: true,
-            fade: true,
-            prevArrow: '<i class="fas fa-caret-left"></i>',
-            nextArrow: '<i class="fas fa-caret-right"></i>',
+        $('.banner-slider').slick({
+            autoplay: true, // Cambia automáticamente las diapositivas
+            autoplaySpeed: 5000, // Tiempo en milisegundos antes de cambiar a la siguiente diapositiva
+            arrows: true, // Mostrar flechas de navegación
+            fade: true, // Efecto de desvanecimiento al cambiar de diapositiva
+            prevArrow: '<button type="button" class="slick-prev">Previous</button>', // Personaliza tu flecha de "anterior"
+            nextArrow: '<button type="button" class="slick-next">Next</button>', // Personaliza tu flecha de "siguiente"
         });
     
         // For Counter Js
@@ -56,14 +56,9 @@
        ========================================================================== */
 
     $(window).on('load', function () {
+        $('.preloader').fadeOut(500);
 
-        //Hide Loading Box (Preloader)
-        function handlePreloader() {
-            if ($('.preloader').length) {
-                $('.preloader').delay(200).fadeOut(500);
-            }
-        }
-        handlePreloader();
+        
         
     });
     
