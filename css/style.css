@@ -2000,4 +2000,50 @@ span {
     display: none;
 }
 
+/* Tramites Extra-Protocolares y Protocolares */
+
+.list-total {
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.30rem;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #163e6f;
+    border-color: #163e6f;
+}
+
+.list-title{
+    text-align: center;
+    padding: 5px;
+}
+
+@media (max-width: 800px){
+    .list-title{
+        font-size: 12px;
+    }
+
+    .list-text{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 500px){
+    .list-title{
+        font-size: 10px;
+    }
+    .list-text{
+        font-size: 8px;
+    }
+}
+
 /* Inserta aquí el resto de tu CSS DEFAULT proporcionado */
