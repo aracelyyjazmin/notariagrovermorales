@@ -2025,8 +2025,12 @@ span {
 .list-title{
     text-align: center;
     padding: 5px;
+    color: #495057;
 }
 
+.list-text{
+    color: #495057;
+}
 @media (max-width: 800px){
     .list-title{
         font-size: 12px;
