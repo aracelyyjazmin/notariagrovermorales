@@ -2003,7 +2003,9 @@ span {
 /* Tramites Extra-Protocolares y Protocolares */
 
 .list-total {
-    padding: 2rem;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 10px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -2036,7 +2038,7 @@ span {
         font-size: 12px;
     }
 
-    .list-text{
+    .list-text2{
         font-size: 10px;
     }
 }
@@ -2045,7 +2047,7 @@ span {
     .list-title{
         font-size: 10px;
     }
-    .list-text{
+    .list-text2{
         font-size: 8px;
     }
 }
