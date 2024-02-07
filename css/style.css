@@ -2005,8 +2005,10 @@ span {
 .list-total {
     margin-right: 0px;
     margin-left: 0px;
-    padding: 10px;
+    padding:45px;
+    border-top: 1px solid rgba(0,0,0,.125);
     font-family: 'Roboto', sans-serif;
+
 }
 
 .list-group-item {
@@ -2049,6 +2051,13 @@ span {
     }
     .list-text2{
         font-size: 8px;
+    }
+}
+
+
+@media (max-width: 400px){
+    .list-text2{
+        font-size: 6px;
     }
 }
 
