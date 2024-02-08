@@ -2002,8 +2002,12 @@ span {
 /* Tramites Extra-Protocolares y Protocolares */
 
 .list-total {
-    padding: 2rem;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding:45px;
+    border-top: 1px solid rgba(0,0,0,.125);
     font-family: 'Roboto', sans-serif;
+
 }
 
 .list-group-item {
@@ -2024,14 +2028,18 @@ span {
 .list-title{
     text-align: center;
     padding: 5px;
+    color: #495057;
 }
 
+.list-text{
+    color: #495057;
+}
 @media (max-width: 800px){
     .list-title{
         font-size: 12px;
     }
 
-    .list-text{
+    .list-text2{
         font-size: 10px;
     }
 }
@@ -2040,8 +2048,15 @@ span {
     .list-title{
         font-size: 10px;
     }
-    .list-text{
+    .list-text2{
         font-size: 8px;
+    }
+}
+
+
+@media (max-width: 400px){
+    .list-text2{
+        font-size: 6px;
     }
 }
 
