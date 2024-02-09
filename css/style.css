@@ -376,7 +376,7 @@ span {
 }
 
 .section-heading-content h2 {
-    font-size: 40px;
+    font-size: 36px;
     color: #222222;
     font-family: 'Playfair Display', serif;
     font-weight: 400;
@@ -661,18 +661,24 @@ span {
 }
 
 .grid-expert-attorneys h3 {
-    color: #222;
-    font-size: 26px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
+    color: #222; 
+    font-size: 26px; 
+    font-family: 'Playfair Display', serif; 
+    font-weight: 700; 
     margin-bottom: 10px;
+    text-align: center; 
 }
 
 .grid-expert-attorneys span {
-    color: #606060;
-    font-size: 16px;
-    font-weight: 300;
+    color: #ffffff; 
+    font-size: 16px; 
+    font-weight: 300; 
+    display: inline-block; 
+    padding: 5px;
+    border-radius: 5px; 
+    margin-top: 10px; 
 }
+
 
 /* ================================================================= */
 /* ===================== TESTIMONIAL PART CSS ============= */
@@ -967,12 +973,44 @@ span {
 /* ===================== HAPPY CLIENT PART CSS ================ */
 /* ================================================================= */
 .happy-client-part {
-    padding-top: 110px;
-    padding-bottom: 110px;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .happy-client-part .clients-info {
     padding: 30px 0;
+}/* Establece el diseño de flexbox para las filas */
+
+
+/* Invierte el orden de los elementos para la segunda fila */
+.row:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+/* Establece la disposición y el ancho de las columnas de imagen y texto */
+.col-lg-4, .col-lg-8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Asegúrate de que la imagen sea responsiva y ocupe el 100% del contenedor .col-lg-4 */
+.clients-img img {
+    width: 100%;
+    height: auto;
+}
+
+/* Asegúrate de que el texto esté alineado adecuadamente */
+.clients-info {
+    text-align: left;
+    padding: 15px;
+}
+
+/* Cambia la alineación del texto para la segunda fila */
+.row:nth-child(2) .clients-info {
+    text-align: right;
 }
 
 /* ================================================================= */
@@ -1828,7 +1866,7 @@ span {
 /* ================ FOOTER TOP PART CSS ================ */
 /* ================================================================= */
 .footer-top {
-    padding-top: 58px;
+    padding-top: 55px;
     padding-bottom: 0px;
     background: #163e6f;
     border-bottom: 1px solid #ffffff;
@@ -1839,26 +1877,37 @@ span {
     margin-bottom: 30px;
 }
 .footer-logo img {
-    width: 280px; 
-    height: 150px; 
+    width: 230px; 
+    height: 140px; 
     object-fit: contain; 
 }
 
 
 .footer-column {
-    margin-bottom: 50px;
-    padding: 10px 15px; 
+    margin-bottom: 30px;
+    
 
 }
 
 .footer-column p {
     color: #bebebe;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.6;
     font-weight: 300;
     margin-bottom: 5px;
 }
 
+@media (min-width: 992px) { /* para pantallas grandes */
+    .footer-top .row > div {
+        padding: 0 15px; /* Añade padding horizontal */
+    }
+}
+
+@media (min-width: 1200px) { /* para pantallas extra grandes */
+    .footer-top .row > div {
+        padding: 0 20px; /* Añade más padding horizontal si es necesario */
+    }
+}
 .personal-info i {
     color: #fff;
     transition: all .3s;
@@ -1878,7 +1927,9 @@ span {
 }
 
 .footer-column {
-    padding: 10px 0;
+    padding: 0;
+    margin-bottom: 30px; /* ajusta el margen inferior según sea necesario */
+
 }
 .footer-column h3 {
     font-size: 26px;
@@ -1909,7 +1960,7 @@ span {
 }
 
 .footer-column ul li a {
-    font-size: 16px;
+    font-size: 14px;
     color: #bebebe;
     font-weight: 500;
     display: block;
@@ -2082,3 +2133,9 @@ span {
 .fab {
     margin-top: 15px; /* Ajusta según sea necesario para centrar el ícono */
 }
+
+
+
+
+
+
