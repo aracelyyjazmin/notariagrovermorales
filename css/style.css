@@ -1829,7 +1829,7 @@ span {
 /* ================================================================= */
 .footer-top {
     padding-top: 58px;
-    padding-bottom: 12px;
+    padding-bottom: 0px;
     background: #163e6f;
     border-bottom: 1px solid #ffffff;
     ;
@@ -1839,14 +1839,16 @@ span {
     margin-bottom: 30px;
 }
 .footer-logo img {
-    width: 280px; /* Set the width as desired */
-    height: 150px; /* Set the height as desired */
-    object-fit: contain; /* This ensures the aspect ratio is maintained without stretching the image */
+    width: 280px; 
+    height: 150px; 
+    object-fit: contain; 
 }
 
 
 .footer-column {
     margin-bottom: 50px;
+    padding: 10px 15px; 
+
 }
 
 .footer-column p {
