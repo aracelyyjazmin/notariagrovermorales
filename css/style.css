@@ -2059,8 +2059,6 @@ span {
     margin-left: 0px;
     padding:45px;
     border-top: 1px solid rgba(0,0,0,.125);
-    font-family: 'Roboto', sans-serif;
-
 }
 
 .list-group-item {
@@ -2069,6 +2067,7 @@ span {
     padding: 0.30rem;
     background-color: #fff;
     border: 1px solid rgba(0,0,0,.125);
+
 }
 
 .list-group-item.active {
@@ -2076,17 +2075,27 @@ span {
     color: #fff;
     background-color: #163e6f;
     border-color: #163e6f;
+
 }
+
 
 .list-title{
     text-align: center;
     padding: 5px;
     color: #495057;
+    font-family: 'Roboto', sans-serif;
 }
 
-.list-text{
-    color: #495057;
+.list-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
+
+.list-text2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
 @media (max-width: 800px){
     .list-title{
         font-size: 12px;
@@ -2111,6 +2120,13 @@ span {
     .list-text2{
         font-size: 6px;
     }
+}
+
+.panel-azul{
+    background-color: #163e6f;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
 }
 
 /* Inserta aquí el resto de tu CSS DEFAULT proporcionado */
