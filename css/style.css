@@ -1874,7 +1874,7 @@ span {
 }
 
 .footer-logo {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 .footer-logo img {
     width: 230px; 
@@ -1896,6 +1896,88 @@ span {
     font-weight: 300;
     margin-bottom: 5px;
 }
+/* Añade esto al final de tu CSS existente */
+
+/* Dispositivos medianos (tablets, 768px y más) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer-top .row > div {
+        padding: 0 10px; /* Reduce el padding para pantallas medianas */
+    }
+    .footer-logo img {
+        width: 180px; /* Logo más pequeño para pantallas medianas */
+        height: auto; /* Mantener la proporción del logo */
+    }
+    .footer-column h3 {
+        font-size: 18px; /* Tamaño de fuente más pequeño para los títulos */
+    }
+    .footer-column ul li a {
+        font-size: 13px; /* Tamaño de fuente más pequeño para los enlaces */
+    }
+    .personal-info i {
+        font-size: 18px; /* Iconos más pequeños para pantallas medianas */
+    }
+}
+
+/* Dispositivos pequeños (teléfonos en posición horizontal, 576px y más) */
+@media (max-width: 767px) {
+    .footer-top .row > div {
+        padding: 0 5px; /* Padding aún más pequeño para pantallas pequeñas */
+    }
+    .footer-logo img {
+        width: 150px; /* Logo aún más pequeño para pantallas pequeñas */
+        height: auto; /* Mantener la proporción del logo */
+    }
+    .footer-column h3 {
+        font-size: 16px; /* Tamaño de fuente aún más pequeño para los títulos */
+    }
+    .footer-column {
+        margin-bottom: 20px; /* Menos margen para las columnas del pie de página */
+    }
+    .footer-column p, .footer-column ul li a {
+        font-size: 16px; /* Tamaño de fuente más pequeño para el texto y enlaces */
+    }
+    .personal-info {
+        display: block; /* Apilar iconos y texto verticalmente */
+        margin-bottom: 10px; /* Espacio entre elementos apilados */
+    }
+    .personal-info i {
+        font-size: 16px; /* Ajusta el tamaño del icono si es necesario */
+    }
+}
+
+/* Dispositivos muy pequeños (teléfonos en posición vertical, menos de 576px) */
+@media (max-width: 575px) {
+    .footer-top {
+        padding-top: 30px; /* Menos padding en la parte superior */
+    }
+    .footer-top .row {
+        flex-direction: column; /* Apilar las columnas verticalmente */
+        align-items: center; /* Alinear elementos al centro */
+    }
+    .footer-top .row > div {
+        width: 100%; /* Columnas de ancho completo para pantallas pequeñas */
+        max-width: 100%; /* Evitar que excedan el ancho */
+        padding: 0 15px; /* Padding para no pegarse a los bordes */
+    }
+    .footer-logo img {
+        width: 130px; /* Logo más pequeño para pantallas muy pequeñas */
+        height: auto; /* Mantener la proporción del logo */
+    }
+    .footer-column {
+        text-align: center; /* Alinear texto al centro */
+        margin-bottom: 15px; /* Ajustar el margen inferior */
+    }
+    .footer-column h3 {
+        font-size: 15px; /* Ajustar el tamaño del título */
+    }
+    .footer-column p, .footer-column ul li a {
+        font-size: 14px; /* Tamaño de fuente más pequeño para el texto y enlaces */
+    }
+    .personal-info i {
+        margin-right: 5px; /* Margen más pequeño para los iconos */
+    }
+}
+
 
 @media (min-width: 992px) { /* para pantallas grandes */
     .footer-top .row > div {
@@ -1905,7 +1987,7 @@ span {
 
 @media (min-width: 1200px) { /* para pantallas extra grandes */
     .footer-top .row > div {
-        padding: 0 20px; /* Añade más padding horizontal si es necesario */
+        padding: 0 15px; /* Añade más padding horizontal si es necesario */
     }
 }
 .personal-info i {
@@ -1928,11 +2010,11 @@ span {
 
 .footer-column {
     padding: 0;
-    margin-bottom: 30px; /* ajusta el margen inferior según sea necesario */
+    margin-bottom: 25px; /* ajusta el margen inferior según sea necesario */
 
 }
 .footer-column h3 {
-    font-size: 26px;
+    font-size: 21px;
     color: #fff;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
@@ -1975,6 +2057,7 @@ span {
 /* ================================================================= */
 /* ============== FOOTER BOTTOM PART CSS ============= */
 /* ================================================================= */
+
 .footer-bottom {
     background: #163e6f;
     padding: 20px 0px;
