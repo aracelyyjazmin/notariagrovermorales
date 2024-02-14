@@ -504,7 +504,6 @@ span {
 .choose-us-part {
     padding-top: 105px;
     padding-bottom: 60px;
-    background-image: url(../images/IMAGENES.png);
     background-repeat: no-repeat;
     background-size: inherit;
     background-attachment: inherit;
@@ -514,7 +513,7 @@ span {
 
 .choose-us-part.on-about-page {
     background-color: #F8F8F8;
-    background-image: url(../images/about-layer-img.png);
+    background-image: url(../images/IMAGENES\ 412\ X\ 908.png);
     background-position: 0 50%;
 
 }
@@ -578,21 +577,26 @@ span {
 /* ================================================================= */
 
 .attorneys-part {
-    padding-top: 0px;
+    padding-top: 50px;
     padding-bottom: 80px;
+    background-color: #F8F8F8;
+
 }
 
 .attorneys-page.attorneys-part {
     padding-top: 110px;
     padding-bottom: 60px;
+
 }
 
 .grid-expert-attorneys {
     margin-bottom: 30px;
+
 }
 
 .m-bottom.grid-expert-attorneys {
     margin-bottom: 50px;
+
 }
 
 .attorneys-img {
@@ -2233,7 +2237,36 @@ span {
     margin-top: 15px; /* Ajusta según sea necesario para centrar el ícono */
 }
 
+.contact-card {
+    background-color: #f7f7f7; /* Color de fondo del cuadro */
+    margin-bottom: 20px; /* Espacio entre los cuadros */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde del cuadro */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
+    border-radius: 4px; /* Bordes redondeados */
+}
 
+.contact-card h3 {
+    border-bottom: 2px solid rgb(12, 22, 86); /* Línea debajo del título */
+    padding-bottom: 10px; /* Espaciado debajo del título */
+    margin-bottom: 20px; /* Espacio debajo de la línea */
+    font-size: 18px;
+}
+
+.contact-card .contact-info p {
+    font-size: 13px; /* Tamaño de fuente para la información de contacto */
+    color: #333; /* Color de texto */
+    margin-bottom: 10px; /* Espacio entre los elementos de contacto */
+}
+
+.contact-card .contact-info a {
+    color: #007bff; /* Color de los enlaces */
+    text-decoration: none; /* No subrayado */
+}
+
+.contact-card .contact-info a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
 
 
 
