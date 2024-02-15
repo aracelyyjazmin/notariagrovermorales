@@ -363,7 +363,7 @@ span {
 /* ================================================================= */
 .practice-area {
     padding-top: 100px;
-    padding-bottom: 55px;
+    padding-bottom: 25px;
 }
 
 .practice-area.on-practice-page {
@@ -504,6 +504,7 @@ span {
 .choose-us-part {
     padding-top: 105px;
     padding-bottom: 60px;
+    background-image: url(../images/IMAGENES.png);
     background-repeat: no-repeat;
     background-size: inherit;
     background-attachment: inherit;
@@ -1895,10 +1896,19 @@ span {
 
 .footer-column p {
     color: #bebebe;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.6;
     font-weight: 300;
     margin-bottom: 5px;
+
+
+    .footer-column p.personal-info{
+        color: #bebebe;
+        font-size: 15px;
+        line-height: 1.6;
+        font-weight: 300;
+        margin-bottom: 5px;
+    }
 }
 /* Añade esto al final de tu CSS existente */
 
@@ -2271,3 +2281,161 @@ span {
 
 
 
+.contact-bar {
+    background-color: #f7f7f7;
+    color: rgb(33, 13, 84);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 1rem; /* Base font size, puede ser ajustada para pantallas más grandes o pequeñas */
+}
+
+.contact-item a,
+.contact-item span {
+    white-space: nowrap; /* Evita que el texto se envuelva en múltiples líneas */
+}
+
+.contact-item i {
+    margin-right: 8px;
+}
+
+.contact-icon {
+    background-color: rgb(15, 16, 72);
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.map-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.google-map {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1907 / 350;
+}
+
+/* Media queries para ajustar el tamaño del texto en diferentes anchos de pantalla */
+@media (max-width: 1200px) {
+    .contact-item {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño para pantallas grandes */
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-bar {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact-item {
+        justify-content: center;
+        width: 100%;
+        font-size: 0.8rem; /* Tamaño de fuente más pequeño para tablets */
+    }
+
+    .contact-item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-item {
+        font-size: 0.7rem; /* Tamaño de fuente más pequeño para móviles */
+    }
+}
+
+
+/* estilos.css */
+
+.map-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.google-map {
+    width: 1907px;
+    height: 350px;
+}
+
+/* Consultas y Servicios Styles */
+.consultas-servicios-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px; /* Espaciado superior e inferior */
+    margin-bottom: 2em;
+
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Centra el texto */
+}
+
+.navbar-brand {
+    text-align: left; /* Anula el centrado de texto para el logo */
+}
+
+.content {
+    margin-bottom: 1em; /* Espacio debajo del contenido del texto */
+}
+
+.content h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 1.5em;
+
+}
+
+.content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 2em;
+}
+
+.button-container {
+    margin-top: 2em; /* Aumenta este valor para dar más espacio encima de los botones */
+    display: flex; /* Hace que los botones estén en línea */
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 10px; /* Espacio entre botones */
+}
+
+
+.service-button {
+    background-color: #2d259e; /* Asegúrate de que este es el color de fondo deseado */
+    color: white !important; /* El uso de !important debería sobreescribir cualquier otro estilo */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    display: inline-block; /* Esto garantiza que los estilos se apliquen correctamente */
+}
+
+.service-button:hover {
+    background-color: #1a1f5d; /* O cualquier otro color de hover que desees */
+    /* No es necesario cambiar la propiedad de color aquí si ya es blanca */
+}
+
+
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column; /* Acomoda botones en columna para pantallas pequeñas */
+        gap: 15px; /* Espacio entre botones en pantallas pequeñas */
+    }
+}
