@@ -2,7 +2,9 @@
 /* ================================================================= */
 /* ======================= DEFAULT CSS ===================== */
 /* ================================================================= */
-
+.w-25 {
+    width: 32%!important;
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -2417,7 +2419,7 @@ span {
 
 
 .service-button {
-    background-color: #2d259e; /* Asegúrate de que este es el color de fondo deseado */
+    background-color: #eeeef2; /* Asegúrate de que este es el color de fondo deseado */
     color: white !important; /* El uso de !important debería sobreescribir cualquier otro estilo */
     padding: 10px 20px;
     text-decoration: none;
@@ -2428,7 +2430,7 @@ span {
 }
 
 .service-button:hover {
-    background-color: #1a1f5d; /* O cualquier otro color de hover que desees */
+    background-color: #f3f3f5; /* O cualquier otro color de hover que desees */
     /* No es necesario cambiar la propiedad de color aquí si ya es blanca */
 }
 
@@ -2439,3 +2441,86 @@ span {
         gap: 15px; /* Espacio entre botones en pantallas pequeñas */
     }
 }
+
+
+/* ================================================================= */
+/* Estilos para el menú lateral */
+.nav-pills .nav-link {
+    background-color: #eaeaea;
+    margin-bottom: 5px;
+    border: none;
+    color: black;
+    border-radius: 0; /* Hace que los botones sean cuadrados */
+  }
+  
+  .nav-pills .nav-link.active, .nav-pills .nav-link:hover {
+    background-color: #163e6f;
+    color: white;
+  }
+  
+  /* Estilos para el contenido principal */
+  .tab-content {
+    background-color: white;
+    padding: 20px;
+    border-left: 3px solid #133477; /* Agrega una barra lateral para el contenido activo */
+  }
+  
+  /* Estilos para los títulos y listas dentro de las pestañas */
+  h4{
+    background-color:#163e6f;
+    color: white;
+    padding: 10px;
+    margin-top: 0;
+    border-top-left-radius: 10px; /* Bordes redondeados para el encabezado */
+    border-top-right-radius: 10px;
+  }
+  
+  ul {
+    list-style: none; /* Remueve los bullets de la lista */
+    padding-left: 0;
+  }
+  
+ 
+  .nav-link.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+  }
+  
+  .nav-link.dropdown-toggle.collapsed::after {
+    border-top: 0;
+    border-right: .3em solid transparent;
+    border-bottom: .3em solid;
+    border-left: .3em solid transparent;
+  }
+
+.nav-link.custom-tab {
+    background-color: #eaeaea; 
+    color: black; 
+  }
+  
+ 
+  .nav-link.custom-tab:hover,
+  .nav-link.custom-tab:focus {
+    background-color: #163e6f; 
+    color: white; 
+  }
+  
+
+  .nav-link.custom-tab.active,
+  .nav-pills .show>.custom-tab {
+    background-color: #163e6f; 
+    color: white; 
+  }
+  
+.tab-pane p,
+.tab-pane ul {
+  text-align: left; 
+}
+
+

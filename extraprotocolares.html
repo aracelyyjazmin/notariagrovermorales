@@ -238,8 +238,75 @@
           </div>
         </div>
       </div>
-    </div>
+    
 
+
+      <div class="container mt-3">
+        <div class="row">
+          <!-- Menú lateral izquierdo con las pestañas -->
+          <div class="col-md-3">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Legalización de Copias</a>
+              
+              <!-- Pestaña existente con subpestañas -->
+              <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#submenu-asuntos" role="button" aria-expanded="false" aria-controls="submenu-asuntos">
+                Asuntos No Contenciosos
+              </a>
+              <div class="collapse" id="submenu-asuntos">
+                <a class="nav-link custom-tab" id="v-pills-sub1-tab" data-bs-toggle="pill" href="#v-pills-sub1" role="tab" aria-controls="v-pills-sub1" aria-selected="false">Subpestaña 1</a>
+                <!-- Añadir más subpestañas si es necesario -->
+              </div>
+              
+              <!-- Nuevas pestañas -->
+              <a class="nav-link" id="v-pills-tab2" data-bs-toggle="pill" href="#v-pills-page2" role="tab" aria-controls="v-pills-page2" aria-selected="false">Pestaña 2</a>
+              <a class="nav-link" id="v-pills-tab3" data-bs-toggle="pill" href="#v-pills-page3" role="tab" aria-controls="v-pills-page3" aria-selected="false">Pestaña 3</a>
+              <a class="nav-link" id="v-pills-tab4" data-bs-toggle="pill" href="#v-pills-page4" role="tab" aria-controls="v-pills-page4" aria-selected="false">Pestaña 4</a>
+              <a class="nav-link" id="v-pills-tab5" data-bs-toggle="pill" href="#v-pills-page5" role="tab" aria-controls="v-pills-page5" aria-selected="false">Pestaña 5</a>
+              <a class="nav-link" id="v-pills-tab6" data-bs-toggle="pill" href="#v-pills-page6" role="tab" aria-controls="v-pills-page6" aria-selected="false">Pestaña 6</a>
+              <a class="nav-link" id="v-pills-tab7" data-bs-toggle="pill" href="#v-pills-page7" role="tab" aria-controls="v-pills-page7" aria-selected="false">Pestaña 7</a>
+            </div>
+          </div>
+      
+          <!-- Contenido principal -->
+          <div class="col-md-9">
+            <div class="tab-content" id="v-pills-tabContent">
+              <!-- Contenido existente -->
+              <!-- ... -->
+              
+              <!-- Contenidos para las nuevas pestañas -->
+              <div class="tab-pane fade" id="v-pills-page2" role="tabpanel" aria-labelledby="v-pills-tab2">
+                <h4>Legalización de Copias</h4>
+                <p><i class="fa fa-check"></i> Requisitos:</p>
+                <ul>
+                  1. Presentarse con el documento original que se pretende legalizar. <br>
+                  2. Documento de Identidad original.<br>
+                  3. Copia Literal no mayor a 3 meses o Vigencia de poder expedida por los Registros Públicos no mayor a 1 mes (indicando el artículo donde se visualice su 
+                    representación y las facultades del caso), de ser apoderados de personas naturales o representantes de una empresa.<br>
+
+              </div>
+              <div class="tab-pane fade" id="v-pills-page3" role="tabpanel" aria-labelledby="v-pills-tab3">
+                <!-- Contenido para Pestaña 3 -->
+              </div>
+              <div class="tab-pane fade" id="v-pills-page4" role="tabpanel" aria-labelledby="v-pills-tab4">
+                <!-- Contenido para Pestaña 4 -->
+              </div>
+              <div class="tab-pane fade" id="v-pills-page5" role="tabpanel" aria-labelledby="v-pills-tab5">
+                <!-- Contenido para Pestaña 5 -->
+              </div>
+              <div class="tab-pane fade" id="v-pills-page6" role="tabpanel" aria-labelledby="v-pills-tab6">
+                <!-- Contenido para Pestaña 6 -->
+              </div>
+              <div class="tab-pane fade" id="v-pills-page7" role="tabpanel" aria-labelledby="v-pills-tab7">
+                <!-- Contenido para Pestaña 7 -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+    </div>
 
     <!-- Botón flotante de WhatsApp -->
     <a href="https://wa.me/912090256" class="whatsapp-float" target="_blank">
@@ -264,7 +331,7 @@
                     <ul>
                     <p class="personal-info">
                         <i class="fas fa-phone-alt"></i>
-                        <span><a href="callto:362-0522">Central Telefonica: +51 912090256</a></span>
+                        <span><a href="callto:4018652">Central Telefonica: 01 4018652</a></span>
                     </p>
                     <p class="personal-info">
                         <i class="fas fa-map-marker"></i>
@@ -272,11 +339,11 @@
                     </p>
                     <p class="personal-info">
                         <i class="fas fa-envelope"></i>
-                        <span><a href="mailto:notsalv@notariasalvatierra.com.pe">Email: info@notariagrovermorales.com</a></span>
+                        <span><a href="mailto:info@notariagrovermorales.com">Email: info@notariagrovermorales.com</a></span>
                     </p>
                     <p class="personal-info">
                         <i class="fas fa-globe"></i>
-                        <span><a href="web:https://notariagrovermorales.com/">https://notariagrovermorales.com</a></span>
+                        <span><a href="web:https://notariagrovermorales.com">https://notariagrovermorales.com</a></span>
                     </p>
                 </ul>
                 </div>
@@ -321,7 +388,59 @@
     <script src="js/jquery.counterup.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+         document.addEventListener('DOMContentLoaded', function() {
+    // Función para mostrar/ocultar las subpestañas
+    function toggleSubmenu(submenuId) {
+      var submenu = document.getElementById(submenuId);
+      submenu.classList.toggle('show');
+    }
+  
+    // Evento para manejar clic en la pestaña Cartas Notariales
+    document.getElementById('v-pills-home-tab').addEventListener('click', function() {
+      toggleSubmenu('submenu-cartas-notariales');
+    });
+});
 
+        // Asegúrate de que el evento DOMContentLoaded esté listo para que el script funcione correctamente.
+        document.addEventListener('DOMContentLoaded', function() {
+          // Función para cambiar la sección activa
+          function changeActiveSection(activeMenuId, activeContentId) {
+            // Desactivar todas las pestañas y paneles
+            document.querySelectorAll('.nav-link').forEach(function(menuItem) {
+              menuItem.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-pane').forEach(function(contentSection) {
+              contentSection.classList.remove('show', 'active');
+            });
+        
+            // Activar la pestaña y el panel seleccionados
+            document.getElementById(activeMenuId).classList.add('active');
+            document.getElementById(activeContentId).classList.add('show', 'active');
+          }
+      
+          // Añadir evento click a todas las pestañas
+          document.querySelectorAll('#v-pills-tab .nav-link').forEach(function(menuItem) {
+            menuItem.addEventListener('click', function() {
+              changeActiveSection(menuItem.id, menuItem.getAttribute('href').substring(1));
+            });
+          });
+        });
+
+document.addEventListener('DOMContentLoaded', function() {
+  var dropdown = document.querySelector('.dropdown-toggle');
+  dropdown.addEventListener('click', function() {
+    var submenu = document.getElementById('submenu-asuntos');
+    if (submenu.classList.contains('show')) {
+      dropdown.classList.add('collapsed');
+    } else {
+      dropdown.classList.remove('collapsed');
+    }
+  });
+});
+      </script>
+      
+      
 </body>
 
 </html>
