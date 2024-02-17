@@ -2524,3 +2524,71 @@ span {
 }
 
 
+@media (max-width: 1200px) {
+    h4 {
+      font-size: 1.26rem; /* Reduce el tamaño de la fuente para pantallas pequeñas */
+    }
+  }
+  /* Estilos para pantallas medianas (tablets) */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .nav-pills .nav-link,
+    .nav-link.custom-tab {
+      /* Ajustes de espaciado y tamaño de fuente para tablets */
+      padding: 8px 12px;
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas (teléfonos móviles) */
+  @media (max-width: 1000px) {
+    .nav-pills .nav-link,
+    .nav-link.custom-tab {
+      /* Ajustes de espaciado y tamaño de fuente para móviles */
+      padding: 6px 10px;
+      font-size: 0.85rem;
+    }
+  
+    /* Ajustes adicionales para las subpestañas en dispositivos móviles */
+    .nav-link.dropdown-toggle {
+      /* Se podría cambiar a un botón de menú tipo hamburguesa o similar */
+    }
+  
+    .collapse {
+      /* Ajustes para el menú desplegable si se usa uno */
+    }
+  
+    .nav-link.custom-tab.active,
+    .nav-pills .show>.custom-tab {
+      /* Ajustes para la subpestaña activa */
+      background-color: #163e6f;
+      color: white;
+    }
+  
+    /* Asegúrate de que las subpestañas son fácilmente accesibles en pantallas táctiles */
+    .nav-link.custom-tab {
+      min-height: 44px; /* Altura mínima para áreas táctiles */
+      padding: 10px; /* Espaciado generoso para facilitar el toque */
+    }
+  }
+  
+  /* Considera ocultar las subpestañas en pantallas muy pequeñas y mostrarlas en un menú desplegable */
+  @media (max-width: 575px) {
+    .nav-link.custom-tab {
+      display: none; /* Oculta las subpestañas */
+    }
+  
+    .nav-link.dropdown-toggle::after {
+      /* Ajustes para mostrar que hay un menú desplegable disponible */
+    }
+  }/* Estilos específicos para las subpestañas y sub-subpestañas */
+.custom-tab {
+    padding-left: 20px; /* Añade indentación para las subpestañas */
+  }
+  
+  /* Media queries para ajustar el diseño responsivo */
+  @media (max-width: 767px) {
+    .custom-tab {
+      padding-left: 15px; /* Menos indentación para pantallas pequeñas */
+      font-size: 0.85rem; /* Tamaño de fuente más pequeño */
+    }
+}
