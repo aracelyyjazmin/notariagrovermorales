@@ -1917,77 +1917,77 @@ span {
 /* Dispositivos medianos (tablets, 768px y más) */
 @media (min-width: 768px) and (max-width: 991px) {
     .footer-top .row > div {
-        padding: 0 10px; /* Reduce el padding para pantallas medianas */
+        padding: 0 10px; 
     }
     .footer-logo img {
-        width: 180px; /* Logo más pequeño para pantallas medianas */
-        height: auto; /* Mantener la proporción del logo */
+        width: 180px; 
+        height: auto; 
     }
     .footer-column h3 {
-        font-size: 18px; /* Tamaño de fuente más pequeño para los títulos */
+        font-size: 18px; 
     }
     .footer-column ul li a {
-        font-size: 13px; /* Tamaño de fuente más pequeño para los enlaces */
+        font-size: 13px; 
     }
     .personal-info i {
-        font-size: 18px; /* Iconos más pequeños para pantallas medianas */
+        font-size: 18px;
     }
 }
 
 /* Dispositivos pequeños (teléfonos en posición horizontal, 576px y más) */
 @media (max-width: 767px) {
     .footer-top .row > div {
-        padding: 0 5px; /* Padding aún más pequeño para pantallas pequeñas */
+        padding: 0 5px; 
     }
     .footer-logo img {
-        width: 150px; /* Logo aún más pequeño para pantallas pequeñas */
-        height: auto; /* Mantener la proporción del logo */
+        width: 150px;
+        height: auto; 
     }
     .footer-column h3 {
-        font-size: 16px; /* Tamaño de fuente aún más pequeño para los títulos */
+        font-size: 16px; 
     }
     .footer-column {
-        margin-bottom: 20px; /* Menos margen para las columnas del pie de página */
+        margin-bottom: 20px; 
     }
     .footer-column p, .footer-column ul li a {
-        font-size: 16px; /* Tamaño de fuente más pequeño para el texto y enlaces */
+        font-size: 16px; 
     }
+}
     .personal-info {
-        display: block; /* Apilar iconos y texto verticalmente */
-        margin-bottom: 10px; /* Espacio entre elementos apilados */
-    }
+        display: block; 
+        margin-bottom: 10px; 
     .personal-info i {
-        font-size: 16px; /* Ajusta el tamaño del icono si es necesario */
+        font-size: 16px; 
     }
 }
 
 /* Dispositivos muy pequeños (teléfonos en posición vertical, menos de 576px) */
 @media (max-width: 575px) {
     .footer-top {
-        padding-top: 30px; /* Menos padding en la parte superior */
+        padding-top: 30px; 
     }
     .footer-top .row {
-        flex-direction: column; /* Apilar las columnas verticalmente */
-        align-items: center; /* Alinear elementos al centro */
+        flex-direction: column; 
+        align-items: center; 
     }
     .footer-top .row > div {
-        width: 100%; /* Columnas de ancho completo para pantallas pequeñas */
-        max-width: 100%; /* Evitar que excedan el ancho */
-        padding: 0 15px; /* Padding para no pegarse a los bordes */
+        width: 100%;
+        max-width: 100%; 
+        padding: 0 15px; 
     }
     .footer-logo img {
-        width: 130px; /* Logo más pequeño para pantallas muy pequeñas */
-        height: auto; /* Mantener la proporción del logo */
+        width: 130px;
+        height: auto; 
     }
     .footer-column {
-        text-align: center; /* Alinear texto al centro */
-        margin-bottom: 15px; /* Ajustar el margen inferior */
+        text-align: center; 
+        margin-bottom: 15px; 
     }
     .footer-column h3 {
-        font-size: 15px; /* Ajustar el tamaño del título */
+        font-size: 15px; 
     }
     .footer-column p, .footer-column ul li a {
-        font-size: 14px; /* Tamaño de fuente más pequeño para el texto y enlaces */
+        font-size: 14px; 
     }
     .personal-info i {
         margin-right: 5px; /* Margen más pequeño para los iconos */
@@ -2181,7 +2181,7 @@ span {
 .list-title{
     text-align: center;
     padding: 5px;
-    color: #495057;
+    color: #f9f9f9;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -2222,9 +2222,9 @@ span {
 }
 
 .panel-azul{
-    background-color: #163e6f;
+    background-color: #fafcff;
     border-radius: 10px;
-    color: #fff;
+    color: #000000;
     padding: 10px;
 }
 
@@ -2327,10 +2327,9 @@ span {
     aspect-ratio: 1907 / 350;
 }
 
-/* Media queries para ajustar el tamaño del texto en diferentes anchos de pantalla */
 @media (max-width: 1200px) {
     .contact-item {
-        font-size: 0.9rem; /* Tamaño de fuente más pequeño para pantallas grandes */
+        font-size: 0.9rem;
     }
 }
 
@@ -2353,7 +2352,7 @@ span {
 
 @media (max-width: 480px) {
     .contact-item {
-        font-size: 0.7rem; /* Tamaño de fuente más pequeño para móviles */
+        font-size: 0.7rem; 
     }
 }
 
@@ -2376,7 +2375,7 @@ span {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 30px 20px; /* Espaciado superior e inferior */
+    padding: 30px 20px; 
     margin-bottom: 2em;
 
 }
@@ -2385,16 +2384,16 @@ span {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    align-items: center; /* Centra los elementos horizontalmente */
-    text-align: center; /* Centra el texto */
+    align-items: center; 
+    text-align: center; 
 }
 
 .navbar-brand {
-    text-align: left; /* Anula el centrado de texto para el logo */
+    text-align: left; 
 }
 
 .content {
-    margin-bottom: 1em; /* Espacio debajo del contenido del texto */
+    margin-bottom: 1em; /
 }
 
 .content h2 {
@@ -2411,16 +2410,16 @@ span {
 }
 
 .button-container {
-    margin-top: 2em; /* Aumenta este valor para dar más espacio encima de los botones */
-    display: flex; /* Hace que los botones estén en línea */
-    justify-content: center; /* Centra los botones horizontalmente */
-    gap: 10px; /* Espacio entre botones */
+    margin-top: 2em;
+    display: flex; 
+    justify-content: center; 
+    gap: 10px;
 }
 
 
 .service-button {
-    background-color: #eeeef2; /* Asegúrate de que este es el color de fondo deseado */
-    color: white !important; /* El uso de !important debería sobreescribir cualquier otro estilo */
+    background-color: #eeeef2; 
+    color: white !important; /* 
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 2px;
@@ -2430,53 +2429,52 @@ span {
 }
 
 .service-button:hover {
-    background-color: #f3f3f5; /* O cualquier otro color de hover que desees */
-    /* No es necesario cambiar la propiedad de color aquí si ya es blanca */
+    background-color: #f3f3f5;
+  
 }
 
 
 @media (max-width: 768px) {
     .button-container {
-        flex-direction: column; /* Acomoda botones en columna para pantallas pequeñas */
-        gap: 15px; /* Espacio entre botones en pantallas pequeñas */
+        flex-direction: column; 
+        gap: 15px; 
     }
 }
 
 
 /* ================================================================= */
-/* Estilos para el menú lateral */
+
 .nav-pills .nav-link {
     background-color: #eaeaea;
     margin-bottom: 5px;
     border: none;
     color: black;
-    border-radius: 0; /* Hace que los botones sean cuadrados */
+    border-radius: 0; 
   }
   
   .nav-pills .nav-link.active, .nav-pills .nav-link:hover {
     background-color: #163e6f;
     color: white;
   }
-  
-  /* Estilos para el contenido principal */
+
   .tab-content {
     background-color: white;
     padding: 20px;
-    border-left: 3px solid #133477; /* Agrega una barra lateral para el contenido activo */
+    border-left: 3px solid #133477; 
   }
   
-  /* Estilos para los títulos y listas dentro de las pestañas */
+
   h4{
     background-color:#163e6f;
     color: white;
     padding: 10px;
     margin-top: 0;
-    border-top-left-radius: 10px; /* Bordes redondeados para el encabezado */
+    border-top-left-radius: 10px; 
     border-top-right-radius: 10px;
   }
   
   ul {
-    list-style: none; /* Remueve los bullets de la lista */
+    list-style: none; 
     padding-left: 0;
   }
   
@@ -2520,9 +2518,45 @@ span {
 
 @media (max-width: 1000px) {
     h4 {
-      font-size: 1.26rem; /* Reduce el tamaño de la fuente para pantallas pequeñas */
-    }
+      font-size: 1.26rem;
   }
-  /* Estilos para pantallas medianas (tablets) */
+  
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
