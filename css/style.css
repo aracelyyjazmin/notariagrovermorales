@@ -2159,6 +2159,34 @@ span {
     color: #163e6f;
 }
 
+.OneTile{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.TwoTile{
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.ThreeTile{
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.FourTile{
+    padding-left: 105px;
+    padding-right: 105px;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    background-color: #fff;
+    border: 1px solid rgba(40, 53, 128, 0.582);
+}
+
 .card{
     padding: 20px;
     
