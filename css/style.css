@@ -2153,20 +2153,23 @@ span {
 
 /* Tramites Extra-Protocolares y Protocolares */
 
-.list-total {
-    margin-right: 0px;
-    margin-left: 0px;
-    padding:45px;
-    border-top: 1px solid rgba(0,0,0,.125);
+.Text-Title{
+    padding:20px;
+    border: solid 1px #163e6f;
+    color: #163e6f;
 }
 
-.list-group-item {
-    position: relative;
-    display: block;
-    padding: 0.30rem;
-    background-color: #fff;
-    border: 1px solid rgba(0,0,0,.125);
+.card{
+    padding: 20px;
+    
+}
 
+.btn{
+    padding: 0px;
+}
+
+.list-group{
+    border-radius: 0px;
 }
 
 .list-group-item.active {
@@ -2174,58 +2177,30 @@ span {
     color: #fff;
     background-color: #163e6f;
     border-color: #163e6f;
-
 }
 
 
-.list-title{
-    text-align: center;
-    padding: 5px;
-    color: #f9f9f9;
-    font-family: 'Roboto', sans-serif;
-}
 
-.list-text {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-}
-
-.list-text2 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-}
-
-@media (max-width: 800px){
-    .list-title{
-        font-size: 12px;
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .list-text2{
-        font-size: 10px;
+    .col-4{
+        padding: 10px;
+        flex: 0 0 80%;
+        max-width: 80%;
     }
-}
-
-@media (max-width: 500px){
-    .list-title{
-        font-size: 10px;
+    .block-title {
+        align-items: center;
     }
-    .list-text2{
-        font-size: 8px;
+
+    .col-8 {
+        padding-top: 10px;
+        flex: 0 0 95%;
+        max-width: 95%;
     }
-}
-
-
-@media (max-width: 400px){
-    .list-text2{
-        font-size: 6px;
-    }
-}
-
-.panel-azul{
-    background-color: #fafcff;
-    border-radius: 10px;
-    color: #000000;
-    padding: 10px;
 }
 
 /* Inserta aquí el resto de tu CSS DEFAULT proporcionado */
